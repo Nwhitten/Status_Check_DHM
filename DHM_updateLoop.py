@@ -83,7 +83,7 @@ while True:
                 status_output_x = int((width - status_output_w) / 2)
                 draw.rectangle((0, 0, width, status_output_h+4), (255, 0, 0))
 
-                draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
+                #draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
 
                 draw.text((100,100), str(status_output_h), (0,0,0), font_ArialB)
 
