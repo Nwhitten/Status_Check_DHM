@@ -4,8 +4,8 @@ echo ""
 
 echo "Downloading files..."
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/update.sh
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/DHM_Update.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/DHM_update.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/DHM_updateLoop.py
 
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/DHM_cog.jpg
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/DHM_pihole.jpg
@@ -27,7 +27,8 @@ mkdir /usr/local/bin/status_check_DHM/
 
 echo "Moving files..."
 
-mv DHM_Update.py /usr/local/bin/status_check_DHM/
+mv DHM_update.py /usr/local/bin/status_check_DHM/
+mv DHM_updateLoop.py /usr/local/bin/status_check_DHM/
 
 mv DHM_cog.jpg /usr/local/bin/status_check_DHM/
 mv DHM_pihole.jpg /usr/local/bin/status_check_DHM/
