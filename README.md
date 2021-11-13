@@ -3,7 +3,7 @@
 
 ### Automatic
 
-`wget -O - https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/main/install.sh | sudo bash`
+`wget -O - https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/install.sh | sudo bash`
 
 
 you will also need to install the following:
