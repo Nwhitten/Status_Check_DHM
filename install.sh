@@ -4,15 +4,15 @@ echo ""
 
 echo "Downloading files..."
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/update.sh
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/DHM_Update.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/update.sh
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/DHM_Update.py
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/inky-hole_assets/DHM_cog.jpg
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/inky-hole_assets/DHM_pihole.jpg
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/inky-hole_assets/DHM_rasp.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/DHM_cog.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/DHM_pihole.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/DHM_rasp.jpg
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/inky-hole_assets/ArialUnicode.ttf
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build_DHM/master/inky-hole_assets/ArialBold.ttf
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/ArialUnicode.ttf
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_DHM/main/inky-hole_assets/ArialBold.ttf
 
 echo ""
 
