@@ -119,24 +119,24 @@ while True:
         
         
 #.reset()
-import ST7789  
- from PIL import Image  
- from time import sleep  
- display=ST7789.ST7789(port=0,cs=0,rst=6,dc=5,backlight=4,spi_speed_hz=160000000)  
- display._spi.mode=3  
- display.reset()  
- display._init()  
- image=Image.new('RGB',(240,240),(255,0,0))  #('RGB',(240,240),(r,g,b))
- display.display(image)  
- sleep(2)  
- image=Image.open("image5.jpg")  
- image=image.resize((240,240),resample=Image.LANCZOS)  
- display.display(image) 
+#import ST7789  
+# from PIL import Image  
+# from time import sleep  
+# display=ST7789.ST7789(port=0,cs=0,rst=6,dc=5,backlight=4,spi_speed_hz=160000000)  
+# display._spi.mode=3  
+# display.reset()  
+# display._init()  
+# image=Image.new('RGB',(240,240),(255,0,0))  #('RGB',(240,240),(r,g,b))
+# display.display(image)  
+# sleep(2)  
+# image=Image.open("image5.jpg")  
+# image=image.resize((240,240),resample=Image.LANCZOS)  
+# display.display(image) 
 
-carrier.display.enableDisplay(false);
+#carrier.display.enableDisplay(false);
 
-    carrier.display.fillScreen(ST77XX_BLACK);
-    pinMode(TFT_BACKLIGHT, OUTPUT);
-    digitalWrite(TFT_BACKLIGHT, LOW);
-    delay(5000);
-    digitalWrite(TFT_BACKLIGHT, HIGH);
+    #carrier.display.fillScreen(ST77XX_BLACK);
+    #pinMode(TFT_BACKLIGHT, OUTPUT);
+    #digitalWrite(TFT_BACKLIGHT, LOW);
+    #delay(5000);
+    #digitalWrite(TFT_BACKLIGHT, HIGH);
