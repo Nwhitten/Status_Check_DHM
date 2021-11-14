@@ -44,9 +44,6 @@ fontti_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",25)
 fontex_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",20)
 
 
-while True:
-
-
 try:
     f = urllib.request.urlopen('http://pihole.local/admin/api.php')
     json_string = f.read()
