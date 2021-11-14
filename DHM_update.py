@@ -37,7 +37,6 @@ font_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",30)
 fontti_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",25)
 fontex_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",20)
 
-
 try:
     f = urllib.request.urlopen('http://pihole.local/admin/api.php')
     json_string = f.read()
@@ -57,22 +56,22 @@ except:
     adsblocked = '?'
     ratio = '?'
 
-if  str(holestatus) == 'enabled':
-    img = Image.open("/usr/local/bin/status_check_DHM/DHM_pihole.jpg")
-    draw = ImageDraw.Draw(img)
-    status_output = 'Enabled'
-    status_output_w, status_output_h = font_ArialB.getsize(status_output)
-    status_output_x = int((width - status_output_w) / 2)
-    draw.text((status_output_x,0), status_output, (0,0,0), font_ArialB)
+if str(holestatus) == 'enabled':
+   img = Image.open("/usr/local/bin/status_check_DHM/DHM_pihole.jpg")
+   draw = ImageDraw.Draw(img)
+   status_output = 'Enabled'
+   status_output_w, status_output_h = font_ArialB.getsize(status_output)
+   status_output_x = int((width - status_output_w) / 2)
+   draw.text((status_output_x,0), status_output, (0,0,0), font_ArialB)
   
 else:
-    img = Image.new("RGB",(width,height),(255,255,255))
-    draw = ImageDraw.Draw(img)
-    status_output = 'Disabled'
-    status_output_w, status_output_h = font_ArialB.getsize(status_output)
-    status_output_x = int((width - status_output_w) / 2)
-    draw.rectangle((0, 0, width, status_output_h+4), (255, 0, 0))
-    draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
+   img = Image.new("RGB",(width,height),(255,255,255))
+   draw = ImageDraw.Draw(img)
+   status_output = 'Disabled'
+   status_output_w, status_output_h = font_ArialB.getsize(status_output)
+   status_output_x = int((width - status_output_w) / 2)
+   draw.rectangle((0, 0, width, status_output_h+4), (255, 0, 0))
+   draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
