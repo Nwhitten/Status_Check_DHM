@@ -33,13 +33,7 @@ disp.begin()
 width = disp.width
 height = disp.height
 
-#font_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",28)
-#fontsm_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",19)
-#fontti_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",16)
-#fontex_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",11)
-
 font_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",30)
-#fontsm_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",25)
 fontti_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",25)
 fontex_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",20)
 
