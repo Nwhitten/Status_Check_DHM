@@ -63,29 +63,25 @@ except:
     adsblocked = '?'
     ratio = '?'
 
-    if  str(holestatus) == 'enabled':
-    	img = Image.open("/usr/local/bin/status_check_DHM/DHM_pihole.jpg")
-        draw = ImageDraw.Draw(img)
-        status_output = 'Enabled'
-        status_output_w, status_output_h = font_ArialB.getsize(status_output)
-        status_output_x = int((width - status_output_w) / 2)
-        draw.text((status_output_x,0), status_output, (0,0,0), font_ArialB)
+if  str(holestatus) == 'enabled':
+    img = Image.open("/usr/local/bin/status_check_DHM/DHM_pihole.jpg")
+    draw = ImageDraw.Draw(img)
+    status_output = 'Enabled'
+    status_output_w, status_output_h = font_ArialB.getsize(status_output)
+    status_output_x = int((width - status_output_w) / 2)
+    draw.text((status_output_x,0), status_output, (0,0,0), font_ArialB)
   
-    else:
-        img = Image.new("RGB",(width,height),(255,255,255))
-        draw = ImageDraw.Draw(img)
-        status_output = 'Disabled'
-        status_output_w, status_output_h = font_ArialB.getsize(status_output)
-        status_output_x = int((width - status_output_w) / 2)
-        draw.rectangle((0, 0, width, status_output_h+4), (255, 0, 0))
-        draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
-        #draw.text((100,100), str(status_output_h), (0,0,0), font_ArialB)
+else:
+    img = Image.new("RGB",(width,height),(255,255,255))
+    draw = ImageDraw.Draw(img)
+    status_output = 'Disabled'
+    status_output_w, status_output_h = font_ArialB.getsize(status_output)
+    status_output_x = int((width - status_output_w) / 2)
+    draw.rectangle((0, 0, width, status_output_h+4), (255, 0, 0))
+    draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
-
-status_output_w, status_output_h = font_ArialB.getsize(status_output)
-status_output_x = int((width - status_output_w) / 2)
 
 draw.text((0,40), 'Total queries (' + str(unique_clients) + ' clients)      ' , (0,0,0), fontex_ArialB)
 draw.text((5,60), str(dns_queries) , (0,0,0), fontti_ArialB)
@@ -101,5 +97,4 @@ draw.text((5,210), str(blocked_domains), (0,0,0), fontti_ArialB)
 
 draw.text((210,210),str(current_time), (255,0,0), fontti_ArialB)
 disp.display(img)
-time.sleep(300)
 
