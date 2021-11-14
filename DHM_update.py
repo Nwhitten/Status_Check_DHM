@@ -75,7 +75,7 @@ else:
     draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
 
 now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
+current_time = now.strftime("%H:%M")
 
 draw.text((0,40), 'Total queries (' + str(unique_clients) + ' clients)      ' , (0,0,0), fontex_ArialB)
 draw.text((5,60), str(dns_queries) , (0,0,0), fontti_ArialB)
